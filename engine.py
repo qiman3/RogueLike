@@ -1,4 +1,4 @@
-from typing import Set, Iterable, Any
+from typing import Iterable, Any
 
 from tcod.context import Context
 from tcod.console import Console
@@ -10,7 +10,7 @@ from game_map import GameMap
 
 
 class Engine:
-    def __init__(self, entities: Set[Entity], event_handler: EventHandler,game_map: GameMap, player: Entity):
+    def __init__(self, entities: set[Entity], event_handler: EventHandler,game_map: GameMap, player: Entity):
         self.entities = entities
         self.event_handler = event_handler
         self.game_map = game_map
